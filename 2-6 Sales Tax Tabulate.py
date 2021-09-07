@@ -1,5 +1,3 @@
-# pyright: reportMissingModuleSource=false
-
 # Litzy Gabriella Carela    Sep 7, 2021
 # Sales Tax V1.0,  Pgm 2-6
 # Purpose: To find the annual profit from the projected amount of sales.
