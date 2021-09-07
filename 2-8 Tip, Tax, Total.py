@@ -1,25 +1,24 @@
 # Litzy Gabriella Carela    Sep 7, 2021
-# Sales Tax V1.0,  Pgm 2-6
-# Purpose: To find the annual profit from the projected amount of sales.
+# Sales Tax V1.0,  Pgm 2-8
+# Purpose: To calculate the tip, the tax, and the total for the ordered food
 
 # Input(s):
-# - Amount of Purchase
+# - Amount of meal purchased
 
 # Output(s):
-# - State Sales Tax
-# - County Sales Tax
-# - Totals Sales Tax
+# - Tip
+# - Sales Tax
 # - Sale Total
 
 # Named Constants
-# - STATE_TAX (0.05)
-# - COUNTY_TAX (0.025)
+# - TIP (0.18)
+# - TAX (0.07)
 
 # Gives a welcome message.
 print('Welcome, user. This program is made to find your sales tax and sale total!')
 
 # Input Message
-purchaseAmount = str(input('Please input your purchase amount: $'))
+purchaseAmount = str(input('Please enter meal purchase amount: $'))
 
 # This is a loop that will have input validation so if the user inputs any characters that are a comma or a space it will ignore them and put the other characters in the empty string (purchaseAmountString).
 purchaseAmountString = ""
@@ -33,22 +32,19 @@ for n in range(len(purchaseAmount)):
 purchaseAmountFloat = float(purchaseAmountString)
 
 # Calculations here
-stateTaxPercent = 0.05
-stateTax = purchaseAmountFloat * stateTaxPercent
+TIP = 0.18
+foodTip = purchaseAmountFloat * TIP
 
-countyTaxPercent = 0.025
-countyTax = purchaseAmountFloat * countyTaxPercent
+TAX = 0.07
+salesTax = purchaseAmountFloat * TAX
 
-salesTax = stateTax + countyTax
-
-saleTotal = purchaseAmountFloat + salesTax
+saleTotal = purchaseAmountFloat + foodTip + salesTax
 
 
 print('Thank you for your purchase. Hope you have a great rest of your day and we hope to see you again soon!')
 
 # You may notice that for the strings it uses double quotes instead of single quotes. For some reason everytime I try to use single quotes (as per usual), I recieve an error message.
 print(f'{"Subtotal: ":>12}', f'{"$":>10}', f'{purchaseAmountFloat:>1,.2f}', sep='')
-print(f'{"State Tax: ":>12}', f'{"$":>10}', f'{stateTax:>1,.2f}', sep='')
-print(f'{"County Tax: ":>12}', f'{"$":>10}', f'{countyTax:>1,.2f}', sep='')
-print(f'{"Total Tax: ":>12}', f'{"$":>10}', f'{salesTax:>1,.2f}', sep='')
+print(f'{"Tip: ":>12}', f'{"$":>10}', f'{foodTip:>1,.2f}', sep='')
+print(f'{"Sales Tax: ":>12}', f'{"$":>10}', f'{salesTax:>1,.2f}', sep='')
 print(f'{"Sale Total: ":>12}', f'{"$":>10}', f'{saleTotal:>1,.2f}', sep='')
