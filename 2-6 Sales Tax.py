@@ -47,7 +47,8 @@ saleTotal = purchaseAmountFloat + salesTax
 print('Thank you for your purchase. Hope you have a great rest of your day and we hope to see you again soon!')
 
 # You may notice that for the strings it uses double quotes instead of single quotes. For some reason everytime I try to use single quotes (as per usual), I recieve an error message.
-print(f'{"Subtotal: ":>12}', f'{"$":>10}', f'{purchaseAmountFloat:>1,.2f}', sep='')
+print(f'{"Subtotal: ":>12}', f'{"$":>10}',
+      f'{purchaseAmountFloat:>1,.2f}', sep='')
 print(f'{"State Tax: ":>12}', f'{"$":>10}', f'{stateTax:>1,.2f}', sep='')
 print(f'{"County Tax: ":>12}', f'{"$":>10}', f'{countyTax:>1,.2f}', sep='')
 print(f'{"Total Tax: ":>12}', f'{"$":>10}', f'{salesTax:>1,.2f}', sep='')
