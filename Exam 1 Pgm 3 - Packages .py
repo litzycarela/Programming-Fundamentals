@@ -1,6 +1,6 @@
 # Litzy Gabriella Carela    Sep 17, 2021
 # Shipping Costs V1.0,  Exam 1 Pgm 3
-# Purpose: To calculate the tip, the tax, and the total for the meal purchased.
+# Purpose: To calculate the shipping costs for each package
 
 # Input(s):
 # - Package Weight (pkg)
@@ -20,7 +20,7 @@ XLRATE = 4.75 # rate for packages that are greater than 10 lbs
 # Gives a welcome message.
 print('Welcome to the shipping company. This program is made to find your package shipping costs based on how many pounds it weighs!')
 
-while True:
+while True: #this while loop will let us see if the user wants to ship another package or just leave it as is.
 # Asks user for input!
     pkg = float(input('Please input package weight here: '))
 
