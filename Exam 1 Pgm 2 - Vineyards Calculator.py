@@ -6,8 +6,8 @@
 # - Name (this isn't requiered but as a user always feels nice when they use your name in a program :) )
 # -- variable is "user"
 # - Length of the Row (rowInput)
-# - Amount of Space used by End-Post Assembly (endpostInput)
-# - Amount of Space between Vines (spaceInput)
+# - Amount of Space used by End-Post Assembly (endpost)
+# - Amount of Space between Vines (space)
 
 
 # Output(s):
@@ -16,25 +16,27 @@
 # Named Constants
 TWO = 2
 
+# Equation is Vines = ((row-2)*endpost space)/space between vines
+# Can also be displayes as vines = (((row - TWO) * endpost) / space)
+
 # Our output has to be an integer but we don't want to round so we will have to import math to use the truncate function to eliminate the decimals without rounding up.
 import math
 
 # Gives a welcome message.
-user = input("Hi there! What's your name?")
-print('Welcome', user, '. This program is made to find out how many grapevines will fit per row!')
+user = input("Hi there! What's your name? ")
+print('Welcome', user, '. This program is made to find out how many grapevines will fit in each row!')
 
 # Input Message
-rowInput = str(input('Please enter the row length in feet: '))
-# I looked up how long the average row in a vineyard is in feet and lets just say... THEY'RE BIG (up to 700) so we'll put some input validation just in case it goes to the thousands.
-# This is a loop that will have input validation so if the user inputs any characters that are a comma or a space it will ignore them and put the other characters in the empty string (purchaseAmountString).
-rowString = ""
-for n in range(len(rowInput)):
-    if rowInput[n] == ',' or rowInput[n] == ' ':
-        continue
-    else:
-        rowString += rowInput[n]
+row = float(input('Please enter the row length in feet: '))
+# Normally input validation would go here but thanks to Dr.Daniels generous assumption on perfect inputs we get to skip that!
 
+# Below I'll ask for the endpost assembly space used and the space between vines
+endpost = float(input('Please input the space taken up by End-Post Assembly (no commas): '))
+space = float(input('Please input the space between each vine (no commas): '))
 
+# Next we can use the formula to find the number of vines per row
+# We will also use the truncate function to round down and take away the decimal points
+vines = math.trunc((((row - TWO) * endpost) / space))
 
-#Here we make the string into a float that way it can be used in the next calculations.
-row = float(rowString)
+# Now a print and end statement!
+print('Thank you for using this calculator! You can place', vines, 'grapevines in each row. Have a great day!')

@@ -18,30 +18,19 @@ TAX_RATE = 0.0825
 print('Welcome, user. This program is made to find your meal total (with 15% tip included)!')
 
 # Input Message
-purchaseAmount = str(input('Please enter meal purchase amount: $'))
-
-# This is a loop that will have input validation so if the user inputs any characters that are a comma or a space it will ignore them and put the other characters in the empty string (purchaseAmountString).
-purchaseAmountString = ""
-for n in range(len(purchaseAmount)):
-    if purchaseAmount[n] == ',' or purchaseAmount[n] == ' ':
-        continue
-    else:
-        purchaseAmountString += purchaseAmount[n]
-
-#Here we make the string into a float that way it can be used in the next calculations.
-purchaseAmountFloat = float(purchaseAmountString)
+purchaseAmount = float(input('Please enter meal purchase amount: $'))
 
 # Calculations here
-foodTip = purchaseAmountFloat * TIP_RATE
-salesTax = purchaseAmountFloat * TAX_RATE
+foodTip = purchaseAmount * TIP_RATE
+salesTax = purchaseAmount * TAX_RATE
 
-saleTotal = purchaseAmountFloat + foodTip + salesTax
+saleTotal = purchaseAmount + foodTip + salesTax
 
 
 print('Thank you for your purchase. Hope you have a great rest of your day and we hope to see you again soon!')
 
 # You may notice that for the strings it uses double quotes instead of single quotes. For some reason everytime I try to use single quotes (as per usual), I recieve an error message.
-print(f'{"Subtotal: ":>12}', f'{"$":>10}', f'{purchaseAmountFloat:>10,.2f}', sep='')
+print(f'{"Subtotal: ":>12}', f'{"$":>10}', f'{purchaseAmount:>10,.2f}', sep='')
 print(f'{"Tip: ":>12}', f'{"$":>10}', f'{foodTip:>10,.2f}', sep='')
 print(f'{"Sales Tax: ":>12}', f'{"$":>10}', f'{salesTax:>10,.2f}', sep='')
 print(f'{"Sale Total: ":>12}', f'{"$":>10}', f'{saleTotal:>10,.2f}', sep='')
