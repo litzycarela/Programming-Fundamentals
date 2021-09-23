@@ -1,4 +1,5 @@
-# Litzy Gabriella Carela    Sep 7, 2021
+from tabulate import tabulate
+#  Litzy Gabriella Carela    Sep 7, 2021
 # Sales Tax V1.0,  Pgm 2-6
 # Purpose: To find the annual profit from the projected amount of sales.
 
@@ -12,7 +13,7 @@
 # - Sale Total
 
 # I'm going to install the tabulate library to make it look nicer when it is printed out as a receipt.
-from tabulate import tabulate
+
 
 # Gives a welcome message.
 print('Welcome, user. This program is made to find your sales tax and sale total!')

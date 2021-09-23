@@ -16,7 +16,7 @@
 # Named Constants
 TWO = 2
 
-# Equation is Vines = ((row-2)*endpost space)/space between vines
+# Equation is Vines = (row-2*endpost space)/space between vines
 # Can also be displayes as vines = (((row - TWO) * endpost) / space)
 
 # Our output has to be an integer but we don't want to round so we will have to import math to use the truncate function to eliminate the decimals without rounding up.
@@ -36,7 +36,7 @@ space = float(input('Please input the space between each vine (no commas): '))
 
 # Next we can use the formula to find the number of vines per row
 # We will also use the truncate function to round down and take away the decimal points
-vines = math.trunc((((row - TWO) * endpost) / space))
+vines = math.trunc((row - TWO * endpost) / space)
 
 # Now a print and end statement!
 print('Thank you for using this calculator! You can place', vines, 'grapevines in each row. Have a great day!')
