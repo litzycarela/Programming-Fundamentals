@@ -1,7 +1,7 @@
 # Litzy G. Carela    8/31/2021
 # Land Calculator V1.0, Pgm 2-3 textbook
 # Calculates total number of acres based on square footage
-# Input(s)
+# Input(org)
 #   Square Feet
 #
 # Output

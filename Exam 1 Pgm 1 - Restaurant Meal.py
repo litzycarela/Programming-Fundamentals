@@ -2,10 +2,10 @@
 # Restaurant Meal V1.0,  Exam 1 Pgm 1
 # Purpose: To calculate the tip, the tax, and the total for the meal purchased.
 
-# Input(s):
+# Input(org):
 # - Meal Charge
 
-# Output(s):
+# Output(org):
 # - Tip (foodTip)
 # - Sales Tax (salesTax)
 # - Sale Total (saleTotal)

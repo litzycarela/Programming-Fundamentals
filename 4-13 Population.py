@@ -1,19 +1,19 @@
 # Litzy Gabriella Carela    Sep 23, 2021
-# Name Here V1.0,  Pgm 4-13
-# Purpose: 
+# Population Calculator V1.0,  Pgm 4-13
+# Purpose: Finding the projected population of organisms
 
-# Input(s):
-# - Starting number of organisms (s)
-# - Daily percentage increase (i)
-# - Number of days (d)
+# Input
+# - Starting number of organisms (org)
+# - Daily percentage increase (increase)
+# - Number of days (days)
 
-# Output(s):
+# Output
 # - A table with days and the organism population number
 
 # Named Constants
 ONE = 1
 ROUND = 3  # Rounding Number
-DIV = 100  # Number for Division
+PER = 100  # Number used for making the percentage
 
 while True:
     # Welcome Statement
@@ -22,25 +22,25 @@ while True:
     # inputs
     while True:  # Input Validation Check
         try:
-            s: int = int(input("Starting number of organisms: "))
+            org: int = int(input("Starting number of organisms: "))
             break
         except ValueError:
             print("Please give me an integer")
-    i = float(input("Average daily increase[%]: ")) / DIV
+    increase = float(input("Average daily increase (%): ")) / PER
 
     while True:  # Input Validation once again
         try:
-            d = range(int(input("Number of days to multiply: ")))
+            days = range(int(input("Number of days: ")))
             break
         except ValueError:
-            print("Please give me an exact number of days")
+            print("Try again please! Please give me an whole number of days")
 
-    # Calculation & output
-    Sum = list(map(lambda x: round(s * (ONE + i) ** d.index(x), ROUND), d))
+    # Here it will calculate the total population based on the number of days and output it
+    table = list(map(lambda x: round(org * (ONE + increase) ** days.index(x), ROUND), days))
     print("\nDays\t Approximate Population")
 
-    for i, amount in enumerate(Sum, ONE):
-        print(f"{i:^4}\t{amount:^22}")
+    for increase, amount in enumerate(table, ONE):
+        print(f"{increase:^4}\t{amount:^22}")
 # Below this loop will give the users the option to start everything over again!
     if input('Would you like to calculate a new organism population? (yes or no) ').lower() == 'yes':
         continue

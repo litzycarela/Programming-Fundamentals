@@ -1,7 +1,7 @@
 # Litzy G. Carela    8/31/2021
 # Miles per Gallon Calculator V1.0, Pgm 2-7 textbook
 # Calculates a cars miles per gallon
-# Input(s)
+# Input(org)
 #   Miles
 #   Gallons
 #

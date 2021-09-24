@@ -2,10 +2,10 @@
 # Bookstore Points V1.0,  Exam 1 Pgm 4
 # Purpose: To calculate the number of points given for each book purchase
 
-# Input(s):
+# Input(org):
 # - number of books purchased (books)
 
-# Output(s):
+# Output(org):
 # - Amount of points awarded (pts)
 
 # Named Constants

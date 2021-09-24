@@ -2,10 +2,10 @@
 # Shipping Costs V1.0,  Exam 1 Pgm 3
 # Purpose: To calculate the shipping costs for each package
 
-# Input(s):
+# Input(org):
 # - Package Weight (pkg)
 
-# Output(s):
+# Output(org):
 # - shipping cost (cost)
 
 # Named Constants

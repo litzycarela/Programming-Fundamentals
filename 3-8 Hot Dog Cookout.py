@@ -2,11 +2,11 @@
 # Hot Dog Cookout Calculator V1.0,  Pgm 3-8
 # Purpose: To find out if the user is an infant, child, teenager, or adult.
 
-# Input(s):
+# Input(org):
 # - People at Cookout
 # - Hotdogs per Person
 
-# Output(s):
+# Output(org):
 # - Minimum Hotdogs Needed
 # - Minimum Hotdog Buns Needed
 # - Leftover Hot Dogs (lo_hd)

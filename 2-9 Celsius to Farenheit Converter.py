@@ -1,7 +1,7 @@
 # Litzy G. Carela    8/31/2021
 # Convert CtoF  V1.0, Pgm 2-9 textbook
 # Converts degrees of Celsius to Fahrenheit
-# Input(s)
+# Input(org)
 #   Celsius
 #
 # Output

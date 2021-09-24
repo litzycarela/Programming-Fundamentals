@@ -2,10 +2,10 @@
 # Sales Tax V1.0,  Pgm 2-8
 # Purpose: To calculate the tip, the tax, and the total for the ordered food
 
-# Input(s):
+# Input(org):
 # - Amount of meal purchased
 
-# Output(s):
+# Output(org):
 # - Tip
 # - Sales Tax
 # - Sale Total

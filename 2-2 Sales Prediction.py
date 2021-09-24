@@ -2,10 +2,10 @@
 # Salses Prediction V1.0,  Pgm 2-2
 # Purpose: To find the annual profit from the projected amount of sales.
 
-# Input(s):
+# Input(org):
 # - Projected amount of total sales
 
-# Output(s):
+# Output(org):
 # - Profit
 
 # Gives a welcome message.

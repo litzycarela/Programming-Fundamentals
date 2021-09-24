@@ -2,10 +2,10 @@
 # Sales Tax V1.0,  Pgm 2-6
 # Purpose: To find the annual profit from the projected amount of sales.
 
-# Input(s):
+# Input(org):
 # - Amount of Purchase
 
-# Output(s):
+# Output(org):
 # - State Sales Tax
 # - County Sales Tax
 # - Totals Sales Tax

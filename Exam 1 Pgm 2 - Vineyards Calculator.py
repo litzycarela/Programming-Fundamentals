@@ -2,7 +2,7 @@
 # Vineyard Owner V1.0,  Exam 1 Pgm 2
 # Purpose: To calculate the number of grapevines to plant in each row.
 
-# Input(s):
+# Input(org):
 # - Name (this isn't requiered but as a user always feels nice when they use your name in a program :) )
 # -- variable is "user"
 # - Length of the Row (rowInput)
@@ -10,7 +10,7 @@
 # - Amount of Space between Vines (space)
 
 
-# Output(s):
+# Output(org):
 # - The number of grapevines per row (vines)
 
 # Named Constants
@@ -23,7 +23,7 @@ TWO = 2
 import math
 
 # Gives a welcome message.
-user = input("Hi there! What's your name? ")
+user = input("Hi there! What'org your name? ")
 print('Welcome', user, '. This program is made to find out how many grapevines will fit in each row!')
 
 # Input Message
