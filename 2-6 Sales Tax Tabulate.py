@@ -32,13 +32,13 @@ stateTaxPercent = 0.05
 stateTax = float(purchaseAmountString)*stateTaxPercent
 
 countyTaxPercent = 0.025
-countyTax = float(purchaseAmountString)*stateTaxPercent
+countyTax = float(purchaseAmountString)*countyTaxPercent
 
 salesTax = stateTax + countyTax
 
 saleTotal = float(purchaseAmountString) + salesTax
 
-receipt = [['Subtotal', 'State Sales Tax', 'County Tax', 'Total Sales Tax', 'Sales Total'], [purchaseAmount, stateTax, countyTax, salesTax, saleTotal]]
+receipt = [['Subtotal', f'{float(purchaseAmount):,.2f}'], ['State Sales Tax', f'{float(stateTax):,.2f}'], ['County Tax', f'{float(countyTax):,.2f}'], ['Total Sales Tax', f'{float(salesTax):,.2f}'], ['Sales Total', f'{saleTotal:,.2f}']]
 print(tabulate(receipt))
 
 print('Thank you for your purchase. Hope you have a great rest of your day and we hope to see you again soon!')

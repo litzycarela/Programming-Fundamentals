@@ -11,8 +11,8 @@
 
 # Named Constants
 PER_DOLLAR = 100
-SEVENTY2 = 0.72
-SIXTY_PERCENT = 0.6
+SEVENTY2 = 0.72 # This decimal is used to calculate property tax which is $0.72 for every $100 (which at the moment is 60%)
+SIXTY_PERCENT = 0.6 # This decimal is used to calculate the assesment value of a property (which at the moment is 60%)
 
 
 def main():  # Main function
